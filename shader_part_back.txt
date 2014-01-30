@@ -1,0 +1,11 @@
+    ShaderProgram {
+      shaderObject [ 
+		VertexShader {
+			sourceProgram "shader\myvertexshader.glsl"
+		}
+		  
+		FragmentShader {
+			sourceProgram "shader\myfragmentshader.glsl"
+		}
+      ]
+    }
