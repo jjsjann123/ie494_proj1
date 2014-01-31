@@ -1,0 +1,157 @@
+#Inventor V2.1 ascii
+
+
+DEF root Separator {
+
+  DEF Inclination RotationXYZ {
+    axis Z
+
+  }
+  DEF Orbit Separator {
+
+    Complexity {
+      value 0.80000001
+      textureQuality 0.89999998
+
+    }
+    Material {
+      emissiveColor 1 1 1
+
+    }
+    DrawStyle {
+      style LINES
+      lineWidth 1
+
+    }
+    Cylinder {
+      radius 10
+      height 0.0099999998
+      parts SIDES
+
+    }
+  }
+  DEF Around_the_Sun Rotor {
+    rotation 0 1 0  4.3437138
+    speed 0.0027399999
+    on TRUE
+
+  }
+  DEF Distance_to_Sun Translation {
+    translation 10 0 0
+
+  }
+  DEF Compensate Rotor {
+    rotation 0 -1 0  4.9091845
+    speed 0.0027399999
+    on TRUE
+
+  }
+  DEF Obliquity Rotation {
+    rotation 0 0 1  0.40900013
+
+  }
+  Material {
+    emissiveColor 1 1 1
+
+  }
+  DEF Axis Separator {
+
+    Cylinder {
+      radius 0.050000001
+      height 4
+      parts SIDES
+
+    }
+  }
+  DEF Planet Separator {
+
+    DEF Moon Separator {
+
+      Rotation {
+        rotation 0 0 1.0000002  0.29999995
+
+      }
+      Rotor {
+        rotation 0 1 0  5.9916801
+        speed 0.075
+
+      }
+      Translation {
+        translation 1.79 0 0
+
+      }
+      Rotor {
+        rotation 0 -1 0  2.9370131
+        speed -0.075
+
+      }
+      Separator {
+
+        Rotor {
+          rotation 0 0 1  5.0771294
+          speed 0.075
+
+        }
+        BumpMap {
+          filename "scene/moonbump1k.jpg"
+
+        }
+        Complexity {
+          value 0.69999999
+
+        }
+        Texture2 {
+          filename "scene/moonmap1k.jpg"
+
+        }
+        Sphere {
+          radius 0.2
+
+        }
+      }
+    }
+    Rotor {
+      rotation 0 1 0  4.9893589
+      speed 1
+      on TRUE
+
+    }
+    BumpMap {
+      filename "scene/earth.jpg"
+
+    }
+    Complexity {
+      value 0.69999999
+
+    }
+    Texture2 {
+      filename "scene/earthmap1k.jpg"
+
+    }
+    Material {
+      diffuseColor 1 1 1
+      transparency 0
+
+    }
+    DEF radius Sphere {
+      radius 1
+
+    }
+  }
+  DEF Name Separator {
+
+    Translation {
+      translation 0 2 0
+
+    }
+    Material {
+      diffuseColor 1 0 0
+      emissiveColor 1 0 0
+
+    }
+    Text2 {
+      string "Earth"
+
+    }
+  }
+}

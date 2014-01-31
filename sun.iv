@@ -1,16 +1,12 @@
 #Inventor V2.1 ascii
 
 
-DEF root Separator {
+Separator {
 
-  PointLight {
-
-  }
-
-  DEF Sun Separator {
-  
-    ShaderProgram {
-      shaderObject [ 
+  Separator {
+	
+	ShaderProgram {
+	  shaderObject [ 
 		VertexShader {
 			sourceProgram "shader\myvertexshader.glsl"
 		}
@@ -18,18 +14,30 @@ DEF root Separator {
 		FragmentShader {
 			sourceProgram "shader\myfragmentshader.glsl"
 		}
-      ]
-    }
-    Texture2 {
-      filename "C:/study/IE494/proj1/scene/sol.png"
+	  ]
+	}
 
-    }
-    Material {
-      emissiveColor 1 1 1
-    }
+	Texture2 {
+		filename "C:/study/IE494/proj1/scene/sol.png"
+
+	}
+	Material {
+		emissiveColor 1 0 0
+		transparency 0.05
+	}
+	Rotor {
+		rotation 0 0.99999994 0  1.4926594
+		speed 0.31
+
+	}
+	Complexity {
+		value 1.0
+		textureQuality 1.0
+	}
     Sphere {
-      radius 4
-
+		radius 3.0
     }
   }
+  
+  
 }

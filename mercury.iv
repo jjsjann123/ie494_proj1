@@ -1,0 +1,113 @@
+#Inventor V2.1 ascii
+
+
+DEF root Separator {
+
+  DEF Inclination RotationXYZ {
+    angle 0.12217
+    axis Z
+
+  }
+  DEF Orbit Separator {
+
+    Complexity {
+      value 0.80000001
+      textureQuality 0.89999998
+
+    }
+    Material {
+      emissiveColor 1 1 1
+
+    }
+    DrawStyle {
+      style LINES
+      lineWidth 1
+
+    }
+    Cylinder {
+      radius 3.9000001
+      height 0.0099999998
+      parts SIDES
+
+    }
+  }
+  DEF Around_the_Sun Rotor {
+    rotation 0 1 0  2.9977472
+    speed 0.011367640873489526
+    on TRUE
+
+  }
+  DEF Distance_to_Sun Translation {
+    translation 3.9000001 0 0
+
+  }
+  DEF Compensate Rotor {
+    rotation 0 -1 0  1.9179081
+    speed 0.011367640873489526
+    on TRUE
+
+  }
+  DEF Obliquity Rotation {
+    rotation 0 0 1  0.001691456
+
+  }
+  Material {
+    emissiveColor 1 1 1
+
+  }
+  DEF Axis Separator {
+
+    Cylinder {
+      radius 0.050000001
+      height 4
+      parts SIDES
+
+    }
+  }
+  DEF Planet Separator {
+
+    Rotor {
+      rotation 0 1 0  1.8639396
+      speed 0.017051403159966033
+      on TRUE
+
+    }
+    BumpMap {
+      filename "scene/mercurybump.jpg"
+
+    }
+    Complexity {
+      value 0.69999999
+
+    }
+    Texture2 {
+      filename "scene/mercurymap.jpg"
+
+    }
+    Material {
+      diffuseColor 1 1 1
+      transparency 0
+
+    }
+    DEF radius Sphere {
+      radius 0.38
+
+    }
+  }
+  DEF Name Separator {
+
+    Translation {
+      translation 0 2 0
+
+    }
+    Material {
+      diffuseColor 1 0 0
+      emissiveColor 1 0 0
+
+    }
+    Text2 {
+      string "Mercury"
+
+    }
+  }
+}

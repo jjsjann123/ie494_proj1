@@ -1,0 +1,109 @@
+#Inventor V2.1 ascii
+
+
+DEF root Separator {
+
+  DEF Inclination RotationXYZ {
+    angle 0.0228289
+    axis Z
+
+  }
+  DEF Orbit Separator {
+
+    Complexity {
+      value 0.80000001
+      textureQuality 0.89999998
+
+    }
+    Material {
+      emissiveColor 1 1 1
+
+    }
+    DrawStyle {
+      style LINES
+      lineWidth 1
+
+    }
+    Cylinder {
+      radius 52
+      height 0.0099999998
+      parts SIDES
+
+    }
+  }
+  DEF Around_the_Sun Rotor {
+    rotation 0 1 0  0.3
+    speed 0.0002308024308112013
+    on TRUE
+
+  }
+  DEF Distance_to_Sun Translation {
+    translation 52 0 0
+
+  }
+  DEF Compensate Rotor {
+    rotation 0 -1 0  0.201
+    speed 0.0002308024308112013
+    on TRUE
+
+  }
+  DEF Obliquity Rotation {
+    rotation 0 0 1  0.0544542
+
+  }
+  Material {
+    emissiveColor 1 1 1
+
+  }
+  DEF Axis Separator {
+
+    Cylinder {
+      radius 0.050000001
+      height 28
+      parts SIDES
+
+    }
+  }
+  DEF Planet Separator {
+
+    Rotor {
+      rotation 0 1 0  2.3166633
+      speed 2.4181457658267638
+      on TRUE
+
+    }
+    Complexity {
+      value 1.0
+
+    }
+    Texture2 {
+      filename "scene/jupitermap.jpg"
+
+    }
+    Material {
+      diffuseColor 1 1 1
+      transparency 0
+
+    }
+    DEF radius Sphere {
+      radius 11
+
+    }
+  }
+  DEF Name Separator {
+
+    Translation {
+      translation 0 14 0
+
+    }
+    Material {
+      diffuseColor 1 0 0
+      emissiveColor 1 0 0
+
+    }
+    Text2 {
+      string "Jupiter"
+
+    }
+  }
+}

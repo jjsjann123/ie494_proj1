@@ -1,0 +1,46 @@
+#Inventor V2.1 ascii
+
+
+DEF root Separator {
+  PerspectiveCamera {
+    viewportMapping ADJUST_CAMERA
+    position 1 0 10
+    orientation 0 0 1.0240002  0.0009765625
+    nearDistance 5.0
+    farDistance 100.0
+
+  }
+
+	PointLight {
+		intensity 10
+		location 0 0 0
+	}
+
+	DEF Sun File {
+		name "sun.iv"
+	}
+	DEF Mercury File {
+		name "mercury.iv"
+	}
+	DEF Venus File {
+		name "venus.iv"
+	}
+	DEF Earth File {
+		name "earth.iv"
+	}
+	DEF Mars File {
+		name "mars.iv"
+	}
+	DEF Jupiter File {
+		name "Jupiter.iv"
+	}
+	DEF Saturn File {
+		name "Saturn.iv"
+	}
+	DEF Uranus File {
+		name "Uranus.iv"
+	}
+	DEF Neptune File {
+		name "Neptune.iv"
+	}
+}

@@ -1,0 +1,124 @@
+#Inventor V2.1 ascii
+
+
+DEF root Separator {
+
+  DEF Inclination RotationXYZ {
+    angle 0.04342379
+    axis Z
+
+  }
+  DEF Orbit Separator {
+
+    Complexity {
+      value 0.80000001
+      textureQuality 0.89999998
+
+    }
+    Material {
+      emissiveColor 1 1 1
+
+    }
+    DrawStyle {
+      style LINES
+      lineWidth 1
+
+    }
+    Cylinder {
+      radius 95
+      height 0.0099999998
+      parts SIDES
+
+    }
+  }
+  DEF Around_the_Sun Rotor {
+    rotation 0 1 0  0.63156694
+    speed 9.3000002e-005
+    on TRUE
+
+  }
+  DEF Distance_to_Sun Translation {
+    translation 95 0 0
+
+  }
+  DEF Compensate Rotor {
+    rotation 0 -1 0  1.1915672
+    speed 9.3000002e-005
+    on TRUE
+
+  }
+  DEF Obliquity Rotation {
+    rotation 0 0 0.99999994  0.46652654
+
+  }
+  Material {
+    emissiveColor 1 1 1
+
+  }
+  DEF Axis Separator {
+
+    Cylinder {
+      radius 0.050000001
+      height 20
+      parts SIDES
+
+    }
+  }
+  DEF Planet Separator {
+
+    Rotor {
+      rotation 0 1 0  1.1149173
+      speed 0.097818643
+      on TRUE
+
+    }
+    Complexity {
+      value 1
+
+    }
+    Texture2 {
+      filename "scene/saturnmap.jpg"
+
+    }
+    Material {
+      diffuseColor 1 1 1
+      transparency 0
+
+    }
+    DEF radius Sphere {
+      radius 9
+
+    }
+  }
+  DEF Name Separator {
+
+    Translation {
+      translation 0 10 0
+
+    }
+    Material {
+      diffuseColor 1 0 0
+      emissiveColor 1 0 0
+
+    }
+    Text2 {
+      string "Saturn"
+
+    }
+  }
+  Separator {
+
+    Texture2 {
+      filename "scene/SaturnRingTrans.png"
+      wrapS REPEAT
+      wrapT REPEAT
+
+    }
+    Cone {
+      bottomRadius 18
+      height 0.001
+      parts SIDES
+
+    }
+  }
+}
