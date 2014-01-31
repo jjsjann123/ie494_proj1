@@ -2,45 +2,72 @@
 
 
 DEF root Separator {
+
   PerspectiveCamera {
     viewportMapping ADJUST_CAMERA
-    position 1 0 10
-    orientation 0 0 1.0240002  0.0009765625
-    nearDistance 5.0
-    farDistance 100.0
+    position -26.991354 1.2731402 -9.355257
+    orientation -0.6931954 0.39099503 0.60547757  3.7333758
+    nearDistance 11.681768
+    farDistance 5993.0391
+    focalDistance 27.370007
 
   }
+  PointLight {
+    intensity 10
+    location 0 0 0
 
-	PointLight {
-		intensity 10
-		location 0 0 0
-	}
+  }
+  Separator {
 
-	DEF Sun File {
-		name "sun.iv"
-	}
-	DEF Mercury File {
-		name "mercury.iv"
-	}
-	DEF Venus File {
-		name "venus.iv"
-	}
-	DEF Earth File {
-		name "earth.iv"
-	}
-	DEF Mars File {
-		name "mars.iv"
-	}
-	DEF Jupiter File {
-		name "Jupiter.iv"
-	}
-	DEF Saturn File {
-		name "Saturn.iv"
-	}
-	DEF Uranus File {
-		name "Uranus.iv"
-	}
-	DEF Neptune File {
-		name "Neptune.iv"
-	}
+    Texture2 {
+      filename "C:/study/IE494/proj1/scene/negx.png"
+
+    }
+    Material {
+      emissiveColor 1 1 1
+
+    }
+    Cube {
+      width 10000
+      height 10000
+      depth 10000
+
+    }
+  }
+  DEF Sun File {
+    name "sun.iv"
+
+  }
+  DEF Mercury File {
+    name "mercury.iv"
+
+  }
+  DEF Venus File {
+    name "venus.iv"
+
+  }
+  DEF Earth File {
+    name "earth.iv"
+
+  }
+  DEF Mars File {
+    name "mars.iv"
+
+  }
+  DEF Jupiter File {
+    name "Jupiter.iv"
+
+  }
+  DEF Saturn File {
+    name "Saturn.iv"
+
+  }
+  DEF Uranus File {
+    name "Uranus.iv"
+
+  }
+  DEF Neptune File {
+    name "Neptune.iv"
+
+  }
 }
