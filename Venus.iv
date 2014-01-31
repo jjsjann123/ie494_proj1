@@ -4,7 +4,7 @@
 DEF root Separator {
 
   DEF Inclination RotationXYZ {
-    angle 0.0592364748
+    angle 0.059236474
     axis Z
 
   }
@@ -25,34 +25,30 @@ DEF root Separator {
 
     }
     Cylinder {
-      radius 7.2
+      radius 7.1999998
       height 0.0099999998
       parts SIDES
 
     }
   }
   DEF Around_the_Sun Rotor {
-    rotation 0 1 0  0.01
-    speed 0.004464285714285714
+    rotation 0 0.99999869 0  0.20871598
+    speed 0.0044642859
     on TRUE
 
   }
   DEF Distance_to_Sun Translation {
-    translation 7.2 0 0
+    translation 7.1999998 0 0
 
   }
   DEF Compensate Rotor {
-    rotation 0 -1 0  0.01
-    speed 0.004464285714285714
+    rotation 0 -0.99999869 0  0.20871598
+    speed 0.0044642859
     on TRUE
 
   }
   DEF Obliquity Rotation {
-    rotation 0 0 1  3.0962140930379
-
-  }
-  Material {
-    emissiveColor 1 1 1
+    rotation 0 0 1  3.0962141
 
   }
   DEF Axis Separator {
@@ -63,12 +59,16 @@ DEF root Separator {
       parts SIDES
 
     }
+    Material {
+      emissiveColor 1 1 1
+
+    }
   }
   DEF Planet Separator {
 
     Rotor {
-      rotation 0 1 0  2.3166633
-      speed 0.0041152263374485
+      rotation 0 1 0  2.4998353
+      speed 0.0041152262
       on TRUE
 
     }
@@ -90,7 +90,7 @@ DEF root Separator {
 
     }
     DEF radius Sphere {
-      radius 0.95
+      radius 0.94999999
 
     }
   }

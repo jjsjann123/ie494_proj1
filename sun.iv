@@ -18,7 +18,7 @@ Separator {
 	}
 
 	Texture2 {
-		filename "C:/study/IE494/proj1/scene/sol.png"
+		filename "scene/sol.png"
 
 	}
 	Material {

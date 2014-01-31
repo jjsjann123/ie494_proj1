@@ -3,13 +3,8 @@
 
 DEF root Separator {
 
-  PerspectiveCamera {
-    viewportMapping ADJUST_CAMERA
-    position -26.991354 1.2731402 -9.355257
-    orientation -0.6931954 0.39099503 0.60547757  3.7333758
-    nearDistance 11.681768
-    farDistance 5993.0391
-    focalDistance 27.370007
+  TransparencyType {
+    value SORTED_OBJECT_SORTED_TRIANGLE_BLEND
 
   }
   PointLight {
@@ -20,7 +15,7 @@ DEF root Separator {
   Separator {
 
     Texture2 {
-      filename "C:/study/IE494/proj1/scene/negx.png"
+      filename "scene/negx.png"
 
     }
     Material {

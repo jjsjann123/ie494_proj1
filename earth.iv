@@ -31,7 +31,7 @@ DEF root Separator {
     }
   }
   DEF Around_the_Sun Rotor {
-    rotation 0 1 0  4.3437138
+    rotation 0 1 0  5.8779693
     speed 0.0027399999
     on TRUE
 
@@ -41,7 +41,7 @@ DEF root Separator {
 
   }
   DEF Compensate Rotor {
-    rotation 0 -1 0  4.9091845
+    rotation 0 -1.0000029 0  0.1602542
     speed 0.0027399999
     on TRUE
 
@@ -50,12 +50,12 @@ DEF root Separator {
     rotation 0 0 1  0.40900013
 
   }
-  Material {
-    emissiveColor 1 1 1
-
-  }
   DEF Axis Separator {
 
+    Material {
+      emissiveColor 1 1 1
+
+    }
     Cylinder {
       radius 0.050000001
       height 4
@@ -68,12 +68,12 @@ DEF root Separator {
     DEF Moon Separator {
 
       Rotation {
-        rotation 0 0 1.0000002  0.29999995
+        rotation 0 0 1  0.29999995
 
       }
       Rotor {
-        rotation 0 1 0  5.9916801
-        speed 0.075
+        rotation 0 1 0  4.0054274
+        speed 0.075000003
 
       }
       Translation {
@@ -81,15 +81,15 @@ DEF root Separator {
 
       }
       Rotor {
-        rotation 0 -1 0  2.9370131
-        speed -0.075
+        rotation 0 -1 0  4.9232645
+        speed -0.075000003
 
       }
       Separator {
 
         Rotor {
-          rotation 0 0 1  5.0771294
-          speed 0.075
+          rotation 0 0 1  3.0908763
+          speed 0.075000003
 
         }
         BumpMap {
@@ -111,7 +111,7 @@ DEF root Separator {
       }
     }
     Rotor {
-      rotation 0 1 0  4.9893589
+      rotation 0 1 0  5.7331533
       speed 1
       on TRUE
 

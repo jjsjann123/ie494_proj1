@@ -32,8 +32,8 @@ DEF root Separator {
     }
   }
   DEF Around_the_Sun Rotor {
-    rotation 0 1 0  2.9977472
-    speed 0.011367640873489526
+    rotation 0 1 0  3.7378199
+    speed 0.01136764
     on TRUE
 
   }
@@ -42,17 +42,13 @@ DEF root Separator {
 
   }
   DEF Compensate Rotor {
-    rotation 0 -1 0  1.9179081
-    speed 0.011367640873489526
+    rotation 0 -1 0  2.6579809
+    speed 0.01136764
     on TRUE
 
   }
   DEF Obliquity Rotation {
     rotation 0 0 1  0.001691456
-
-  }
-  Material {
-    emissiveColor 1 1 1
 
   }
   DEF Axis Separator {
@@ -63,12 +59,16 @@ DEF root Separator {
       parts SIDES
 
     }
+    Material {
+      emissiveColor 1 1 1
+
+    }
   }
   DEF Planet Separator {
 
     Rotor {
-      rotation 0 1 0  1.8639396
-      speed 0.017051403159966033
+      rotation 0 1 0  2.9740448
+      speed 0.017051402
       on TRUE
 
     }
